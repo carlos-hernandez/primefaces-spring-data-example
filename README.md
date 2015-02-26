@@ -62,7 +62,7 @@ To have a better integration between Orika and Spring this module defines a `Spr
 - Orika
 
 **References:**
--- [Orika Documentation](http://orika-mapper.github.io/orika-docs/)
+- [Orika Documentation](http://orika-mapper.github.io/orika-docs/)
 
 ### SPI (Service Provider Interface)
 

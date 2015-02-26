@@ -1,0 +1,22 @@
+# Maven output files and dirs.
+target
+out
+
+# IntelliJ IDEA configuration files.
+.idea
+*.iml
+*.ipr
+*.iws
+atlassian*.xml
+
+# Eclipse configuration files.
+.classpath
+.project
+.settings
+bin
+
+# NetBeans configuration files.
+build
+dist
+nbproject
+build.xml

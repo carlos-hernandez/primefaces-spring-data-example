@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<f:view>
+    <h:form prependId="false">
+        <h2>Primefaces + Spring Data + QueryDSL + LazyDataModel</h2>
+
+        <p:dataTable var="subsidiary" value="#{subsidiaryController.dataModel}"
+                     lazy="true" paginator="true"
+                     rows="3"
+                     paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                     rowsPerPageTemplate="3,5,10">
+
+            <p:column headerText="Name" filterBy="#{subsidiary.name}">
+                <h:outputText value="#{subsidiary.name}"/>
+            </p:column>
+
+            <p:column headerText="Description" filterBy="#{subsidiary.description}">
+                <h:outputText value="#{subsidiary.description}"/>
+            </p:column>
+        </p:dataTable>
+    </h:form>
+</f:view>
+</html>

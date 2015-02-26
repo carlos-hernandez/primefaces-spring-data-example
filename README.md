@@ -58,7 +58,7 @@ To map the entities and the DTOs defined in the SPI layer we need a bean mapper 
 
 To have a better integration between Orika and Spring this module defines a `SpringConfigurableMapper` that searches bean mappers and converters created with Orika that are registered as Spring `@Component`s.
 
-**Dependencies:*
+**Dependencies:**
 - Orika
 
 **References:**
